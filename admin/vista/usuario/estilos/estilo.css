@@ -1,0 +1,80 @@
+body{
+    background-size: 100% 100%;
+     background-color: blue;
+}
+ 
+#registro {
+   align-content: center;
+    text-align:left;
+    justify-content: center;
+    width:400px;
+    padding:3px;
+    margin-left:auto;
+     margin-right:auto;
+    border-radius: 10px;
+    border: 5px solid;
+border-color:rgb(255, 8, 8);
+    background-color:rgb(75, 71, 71);
+}
+ label {
+     text-align: right;
+    font-size: 20px;
+    color: #00ff00;
+}
+input{ 
+    background-color:rgb(251, 255, 0);
+    width: 20em; 
+    height: 2em;
+    }
+ input[type="submit"]:not([size]) { 
+    font-weight:bold;
+     color: rgb(177, 0, 0);
+       font-size: 15px;
+        width: 10em; 
+        height: 2em;
+        background-color: rgb(255, 123, 0);
+        border-radius: 10px;
+        }
+input[type="reset"]:not([size]) { 
+    font-weight:bold;
+    color: rgb(177, 0, 0);
+    font-size: 15px;
+    background-color: rgb(255, 167, 5);
+    border-radius: 10px;
+            width: 10em; 
+            height: 2em;
+            }
+
+#registro p br { clear: left; }
+.enviar { margin:3px 0 0 83px; }
+
+table {  color: rgb(0, 0, 0); 
+    font-family: Helvetica, Arial, sans-serif; 
+    width: 640px;
+     border-collapse: collapse;
+    }
+
+td, th {
+     border: 1px solid royalblue;
+      height: 30px;
+     }
+
+th { 
+    background: rgb(67, 219, 21); 
+    font-weight: bold; 
+}
+
+td {
+     background: rgb(129, 16, 16); 
+     text-align: center; 
+    }
+
+tr:nth-child(even) td { 
+    background: rgb(255, 251, 0); }  
+
+tr:nth-child(odd) td {
+     background: rgb(12, 218, 173); } 
+
+tr td:hover { 
+    background: #666;
+     color: #FFF; }

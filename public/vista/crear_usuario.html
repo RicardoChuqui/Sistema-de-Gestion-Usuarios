@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Gestión de usuarios</title>
+ <linK rel="stylesheet" type="text/css" href="../../admin/vista/usuario/estilos/estilo.css">
+</head>
+<body>
+        <div id="registro">
+ <form method="POST" action="../controladores/crear_usuario.php">
+ <label for="cedula">Cedula (*)</label><br>
+ <input type="text" id="cedula" name="cedula" value="" placeholder="Ingrese el número de cedula ..."
+required/>
+ <br>
+ <label for="nombres">Nombres (*)</label><br>
+ <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese sus dos nombres
+..." required/>
+ <br>
+ <label for="apellidos">Apelidos (*)</label><br>
+ <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus dos apellidos
+..." required/>
+ <br>
+ <label for="direccion">Dirección (*)</label><br>
+ <input type="text" id="direccion" name="direccion" value="" placeholder="Ingrese su dirección ..."
+required/>
+ <br>
+ <label for="telefono">Teléfono (*)</label><br>
+ <input type="text" id="telefono" name="telefono" value="" placeholder="Ingrese su número telefónico
+ ..." required/>
+  <br>
+  <label for="fecha">Fecha Nacimiento (*)</label><br>
+  <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="" placeholder="Ingrese su
+ fecha de nacimiento ..." required/>
+  <br>
+  <label for="correo">Correo electrónico (*)</label><br>
+  <input type="email" id="correo" name="correo" value="" placeholder="Ingrese su correo electrónico
+ ..." required/>
+  <br>
+  <label for="correo">Contraseña (*)</label><br>
+  <input type="password" id="contrasena" name="contrasena" value="" placeholder="Ingrese su
+ contraseña ..." required/>
+  <br>
+  <br>
+  <input type="submit" id="crear" name="crear" value="Aceptar" />
+  <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
+  </form>
+  </div>
+ </body>
+ </html>
