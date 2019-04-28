@@ -6,11 +6,8 @@
 <body>
 <?php
     session_start();    
-    
-
     //incluir conexiÃ³n a la base de datos
     include '../../../config/conexionBD.php';
-
     $codigo = $_POST["usu_codigo"];
     $cedula = isset($_POST["cedula"]) ? trim($_POST["cedula"]) : null;
     $nombres = isset($_POST["nombres"]) ? mb_strtoupper(trim($_POST["nombres"]), 'UTF-8') : null;
@@ -26,7 +23,9 @@
            usu_direccion ='$direccion' ,
            usu_telefono = '$telefono', 
            usu_correo = '$correo',
-           usu_fecha_nacimiento = '$fechaNacimiento'
+           usu_fecha_nacimiento = '$fechaNacimiento',
+           usu_fecha_modificacion ='".$_POST['usu_fecha_modificacion']."'
+
            WHERE usu_codigo= '$codigo'";
 
     if ($conn->query($sql) === TRUE) {
@@ -36,8 +35,7 @@
     }
     echo "<a href='index.php'>Regresar</a>";
 
-    $conn->close();
-    
+    $conn->close();  
 ?>
 </body>
 </html>

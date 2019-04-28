@@ -21,7 +21,9 @@
             
             while($row = $result->fetch_assoc()) {
              ?>
-                <form id="formulario01" method="POST" action="actualizarDatos.php">
+
+                  <div id="registro">
+                <form  method="POST" action="actualizarDatos.php">
 
                 <br>
                     <label for="usu_codigo">Codigo (*)</label><br>
@@ -30,15 +32,12 @@
                     <label for="cedula">Cedula (*)</label><br>
                     <input type="text" id="cedula" name="cedula"  value=""  placeholder="Ingrese el número de cedula ..."/>
                     <br>
-
                     <label for="nombres">Nombres (*)</label><br>
                     <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese sus dos nombres ..."/>
                     <br>
-
                     <label for="apellidos">Apelidos (*)</label><br>
                     <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus dos apellidos ..."/>
                     <br>
-                   
                     <label for="direccion">Dirección (*)</label><br>
                     <input type="text" id="direccion" name="direccion" value="" placeholder="Ingrese su dirección ..."required/>
                      <br>
@@ -47,20 +46,20 @@
                     <br>
                     <label for="fecha">Fecha Nacimiento (*)</label><br>
                     <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="" placeholder="Ingrese su fecha de nacimiento ..." required/>
-                   
                     <br>
                     <label for="correo">Correo electrónico (*)</label><br>
                     <input type="text" id="correo" name="correo" value="" placeholder="Ingrese su correo electrónico ..."/>
                     <br>
-
                     <label for="correo">Contraseña (*)</label><br>
                     <input type="password" id="contrasena" name="contrasena" value="" placeholder="Ingrese su contraseña..."/>
+                    <br>
+                    <input type="hidden" name="usu_fecha_modificacion" value="<?php echo date("Y-m-d H:i:s", time()); ?>" />
                     <br>
                     <br>
                     <input type="submit" id="guardar" name="guardar" value="Guardar" />
                     <input type="reset" id="regresar" name="regresar" value="Cancelar" onclick="location.href = 'index.php';" />
                 </form>    
-
+            </div>
              <?php
             }
         } else {            
@@ -68,6 +67,5 @@
         }
         $conn->close();         
     ?>                      
-
 </body>
 </html>
