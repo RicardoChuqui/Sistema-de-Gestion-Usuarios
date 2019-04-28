@@ -38,9 +38,9 @@
  echo " <td>" . $row['usu_telefono'] . "</td>";
  echo " <td>" . $row['usu_correo'] . "</td>";
  echo " <td>" . $row['usu_fecha_nacimiento'] . "</td>";
- echo " <td> <a href='eliminar.php? usu_codigo=". $row["usu_codigo"] . "' onclick='return confirm(\"¿Está seguro que desea eliminar?\")'>Eliminar</a></td>";    
- echo " <td> <a href='modificar.php? usu_codigo=". $row["usu_codigo"] . "'>Modificar</a></td>";      
- echo " <td> <a href='cambiar_contraseña.php? password=". $row["password"] . "'>Cambiar Contraseña</a></td>";
+ echo " <td> <a href='eliminar.php? usu_codigo=". $row["usu_codigo"] . "' onclick='return confirm(\"¿Está seguro que desea eliminar?\")'>Eliminar</a></td>"; 
+ echo " <td> <a href='actualizar.php ? usu_codigo=". $row["usu_codigo"] . "'>Modificar</a></td>";                                   
+ echo " <td> <a href='cambiar_contraseña.php ? usu_codigo=". $row["usu_codigo"] . "'>ModificarContrasena</a></td>";     
  echo "</tr>";
  }
  } else {
